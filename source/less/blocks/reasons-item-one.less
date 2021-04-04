@@ -1,0 +1,42 @@
+.reasons-item-one__sublist {
+  .none-indent;
+  padding-left: 70px;
+  min-width: 220px;
+  margin-top: 35px;
+  margin-bottom: 35px;
+  text-align: left;
+  list-style-type: none;
+}
+
+@media (min-width: @tablet-width) {
+  .reasons-item-one__sublist {
+    margin-top: 158px;
+    margin-bottom: 56px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+    padding: 0 33px;
+    gap: 20px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .reasons-item-one__sublist-title {
+    .font-var(21px, 56px, 700);
+  }
+}
+
+.reasons-item-one__text {
+  background-color: @blue-basic;
+  color: @white-basic;
+  margin-top: 30px;
+  padding-top: 38px;
+  padding-bottom: 40px;
+}
+
+@media (min-width: @tablet-width) {
+  .reasons-item-one__wrap {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+}

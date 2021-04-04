@@ -1,0 +1,29 @@
+.reasons-item-two__text {
+  background-color: @blue-basic;
+  color: @white-basic;
+  margin-top: 30px;
+  padding-top: 38px;
+}
+
+@media (min-width: @tablet-width) {
+  .reasons-item-two__text {
+    grid-column: 2;
+  }
+}
+
+.reasons-item-two__description {
+  margin-bottom: 35px;
+}
+
+@media (min-width: @tablet-width) {
+  .reasons-item-two__wrap {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .reasons-item-two__foto {
+    grid-row: 1;
+  }
+}
