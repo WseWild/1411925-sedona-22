@@ -1,0 +1,16 @@
+.page-header__wrap {
+  height: 56px;
+  position: relative;
+}
+
+@media (min-width: @tablet-width) {
+  .page-header__wrap {
+    height: 0;
+  }
+
+  .page-header__logo {
+    content: "";
+    position: relative;
+    top: -56px;
+  }
+}
