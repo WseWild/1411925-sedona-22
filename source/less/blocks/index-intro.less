@@ -1,45 +1,86 @@
-.index-intro {
-  min-height: 100%;
-  width: 100%;
-  background-image: url("../img/title-back.jpg");
-  background-repeat: no-repeat;
-}
-
 .index-intro__list {
   .none-indent;
   padding-top: 90px;
+  background-image: url("../img/title-back.jpg");
+  background-repeat: no-repeat;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 77px;
+    background-image: url("../img/title-back-tablet.jpg");
+  }
+
+  @media (min-width: @desktop-width) {
+    background-image: url("../img/title-back-desktop.jpg");
+  }
 }
 
-@media (min-width: @tablet-width) {
-  .index-intro__list {
-    padding-top: 77px;
+.index-intro__welcome {
+  margin-bottom: -4px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 0;
+    height: 46px;
+    width: 188px;
+  }
+}
+
+.index-intro__gorgeus {
+  @media (min-width: @tablet-width) {
+    width: 280px;
+    height: 31px;
   }
 }
 
 .index-intro__sedona {
-  padding-top: 32px;
-  padding-bottom: 37px;
+  padding-top: 23px;
+  padding-bottom: 20px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 45px;
+    padding-bottom: 43px;
+    width: 461px;
+    height: 81px;
+  }
 }
 
-@media (min-width: @tablet-width) {
-  .index-intro__sedona {
-    padding-top: 51px;
-    padding-bottom: 59px;
+.index-intro__canyon {
+  padding-bottom: 105px;
+  margin-left: -11px;
+
+  @media (min-width: @tablet-width) {
+    margin-left: -18px;
+    width: 300px;
+    height: 84px;
+    padding-bottom: 80px;
   }
 }
 
 .index-intro__about {
+  position: relative;
   margin: 0 auto;
-  padding-top: 117px;
   padding-left: 25px;
   padding-right: 25px;
   .font-var(18px, 26px, 700);
   max-width: 483px;
-}
 
-@media (min-width: @tablet-width) {
-  .index-intro__about {
-    padding-top: 154px;
+  &::before {
+    content: url("../img/intro-triangle.svg");
+    position: absolute;
+    top: -87px;
+    left: -438px;
+
+    @media (min-width: @tablet-width) {
+      top: -57px;
+      left: -333px;
+    }
+  }
+
+  @media (min-width: @tablet-width) {
+    padding-top: 44px;
     .font-var(21px, 26px, 700);
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 57px;
   }
 }
