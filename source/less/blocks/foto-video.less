@@ -1,0 +1,26 @@
+.foto-video__title {
+  .font-var( 18px, 26px, 700);
+  .none-indent;
+  position: relative;
+  margin-bottom: 29px;
+
+  @media (min-width: @tablet-width) {
+    .font-var( 30px, 26px, 700);
+  }
+
+  &::before {
+    content: url("../img/intro-triangle.svg");
+    position: absolute;
+    top: -85px;
+    left: -439px;
+
+    @media (min-width: @tablet-width) {
+      top: -119px;
+      left: -216px;
+    }
+
+    @media (min-width: @desktop-width) {
+      left: 0;
+    }
+  }
+}
