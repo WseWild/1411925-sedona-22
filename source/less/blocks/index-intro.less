@@ -62,16 +62,29 @@
   padding-right: 25px;
   .font-var(18px, 26px, 700);
   max-width: 483px;
+  margin-bottom: 30px;
 
   &::before {
-    content: url("../img/intro-triangle.svg");
+    content: "";
+    background-image: url("../img/intro-triangle.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 320px;
+    height: 60px;
     position: absolute;
-    top: -87px;
-    left: -438px;
+    top: -90px;
+    left: 0;
 
     @media (min-width: @tablet-width) {
-      top: -57px;
-      left: -333px;
+      width: 768px;
+      top: -60px;
+      left: -120px;
+    }
+
+    @media (min-width: @desktop-width) {
+      width: 1280px;
+      top: -60px;
+      left: -371px;
     }
   }
 

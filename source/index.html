@@ -11,14 +11,14 @@
       background-repeat: no-repeat;
       background-position: 50% 0;
       /* По умолчанию мобильный макет */
-      background-image: url("img/index-mobile.png");
+      background-image: url("img/index-mobile.jpg");
     }
     /* Планшет */
 
     @media ( min-width: 768px) {
       HTML {
         /* Планшетный макет */
-        background-image: url("img/index-tablet.png");
+        background-image: url("img/index-tablet.jpg");
       }
     }
     /* Десктоп */
@@ -26,17 +26,16 @@
     @media ( min-width: 1200px) {
       HTML {
         /* Десктопный макет */
-        background-image: url("img/index-desktop.png");
+        background-image: url("img/index-desktop.jpg");
       }
     }
 
     BODY {
       opacity: 0.7;
-      /* filter: invert(100%); */
+      filter: invert(100%);
     }
   }
-  </style>
-   -->
+  </style> -->
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="../node_modules/pixel-glass/styles.css">
   <script src="../node_modules/pixel-glass/script.js"></script>
@@ -118,8 +117,8 @@
           <div class="reasons-item-one__wrap">
             <div class="reasons-item-one__text">
               <h3 class="reasons-item-one__title reasons__list-title">Настоящий городок</h3>
-              <p class="reasons-item-one__number reasons__list-number">— №1 —</p>
-              <p class="reasons-item-one__description">
+              <p class="reasons-item-one__number">— №1 —</p>
+              <p class="reasons-item-one__description reasons__description">
                 Седона не аттракцион для туристов, там течет своя жизнь
               </p>
             </div>
@@ -151,8 +150,8 @@
           <div class="reasons-item-two__wrap">
             <div class="reasons-item-two__text">
               <h3 class="reasons-item-two__title reasons__list-title">Там есть<br> мост дьявола</h3>
-              <p class="reasons-item-two__number reasons__list-number">— №2 —</p>
-              <p class="reasons-item-two__description">
+              <p class="reasons-item-two__number">— №2 —</p>
+              <p class="reasons-item-two__description reasons__description">
                 Да, по нему можно пройти! Если вы осмелитесь, конечно
               </p>
             </div>
@@ -163,21 +162,21 @@
         <li class="reasons-item-three">
           <h3 class="reasons-item-three__title reasons__list-title">Небольшая площадь</h3>
           <p class="reasons-item-three__number reasons__list-number">— №3 —</p>
-          <p class="reasons-item-three__description">
+          <p class="reasons-item-three__description reasons__description">
             Все интересные места находятся очень близко
           </p>
         </li>
         <li class="reasons-item-four">
           <h3 class="reasons-item-four__title reasons__list-title">Красивая дорога</h3>
           <p class="reasons-item-four__number reasons__list-number">— №4 —</p>
-          <p class="reasons-item-four__description">
+          <p class="reasons-item-four__description reasons__description">
             Ехать в Седону из Лас-Вегаса совсем не скучно!
           </p>
         </li>
         <li class="reasons-item-five">
           <h3 class="reasons-item-five__title reasons__list-title">Мало туристов</h3>
           <p class="reasons-item-five__number reasons__list-number">— №5 —</p>
-          <p class="reasons-item-five__description">
+          <p class="reasons-item-five__description reasons__description">
             Большинство едет в гранд каньон и толпится там
           </p>
         </li>
@@ -194,7 +193,8 @@
             Найти гостиницу
         </a>
       </div>
-      <div class="map-pic">
+      <div class="hotel-search__map-wrap">
+        <iframe class="hotel-search__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1704463.687703044!2d-112.7940862226719!3d34.270599289137415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da14b79c7a2b5%3A0xf42cf16ec607e7da!2z0K3QudGA0L_QvtGA0YIg0JzQtdGB0LA!5e0!3m2!1sru!2sru!4v1619299285869!5m2!1sru!2sru" width="320" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
       </div>
     </section>
   </main>
