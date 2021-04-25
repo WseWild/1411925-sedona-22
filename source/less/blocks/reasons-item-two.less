@@ -1,18 +1,52 @@
 .reasons-item-two__text {
   background-color: @blue-basic;
   color: @white-basic;
-  margin-top: 30px;
-  padding-top: 38px;
-}
 
-@media (min-width: @tablet-width) {
-  .reasons-item-two__text {
+  @media (min-width: @tablet-width) {
     grid-column: 2;
   }
 }
 
+.reasons-item-two__title {
+  .none-indent;
+  padding-top: 41px;
+
+  @media (min-width: @desktop-width) {
+    padding-top: 52px;
+  }
+}
+
+// Так можно делать в качестве исключения если текст плохо поддается форматированию через боковые отступы?
+.reasons-item-two__title br {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: initial;
+  }
+}
+
+.reasons-item-two__number {
+  margin-top: 10px;
+  margin-bottom: 18px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 16px;
+    margin-bottom: 22px;
+  }
+}
+
+
 .reasons-item-two__description {
-  margin-bottom: 35px;
+  .none-indent;
+  padding-bottom: 35px;
+
+  @media (min-width: @tablet-width) {
+    padding: 0 36px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0 88px;
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -25,5 +59,23 @@
 @media (min-width: @tablet-width) {
   .reasons-item-two__foto {
     grid-row: 1;
+  }
+}
+
+.reasons-item-two__picture {
+  background-image: url("../img/photo-bridge-m.jpg");
+  height: 260px;
+  width: 320px;
+  grid-row: 1;
+
+  @media (min-width: @tablet-width) {
+    background-image: url("../img/photo-bridge-t.jpg");
+    height: 256px;
+    width: 512px;
+  }
+
+  @media (min-width: @desktop-width) {
+    background-image: url("../img/photo-bridge-d.jpg");
+    width: 800px;
   }
 }

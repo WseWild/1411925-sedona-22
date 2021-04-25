@@ -1,6 +1,10 @@
 .reasons {
-  margin-top: 40px;
   line-height: 21px;
+  margin-bottom: 33px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 55px;
+  }
 }
 
 .reasons__list {
@@ -11,10 +15,24 @@
 
 .reasons__list-title {
   .font-var(18px, 26px, 700);
-  margin-bottom: 25px;
+  // margin-bottom: 25px;
+  .none-indent;
+
+  @media (min-width: @tablet-width) {
+    .font-var(21px, 26px, 700);
+  }
 }
 
 .reasons__list-number {
-  margin-top: 21px;
-  margin-bottom: 20px;
+  .none-indent;
+  margin-top: 10px;
+  margin-bottom: 17px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 25px;
+  }
+}
+
+.reasons__description {
+  .none-indent;
 }

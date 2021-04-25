@@ -1,42 +1,221 @@
 .reasons-item-one__sublist {
   .none-indent;
   padding-left: 70px;
+  padding-right: 10px;
   min-width: 220px;
-  margin-top: 35px;
+  margin-top: 33px;
   margin-bottom: 35px;
   text-align: left;
   list-style-type: none;
-}
 
-@media (min-width: @tablet-width) {
-  .reasons-item-one__sublist {
-    margin-top: 158px;
-    margin-bottom: 56px;
+  @media (min-width: @tablet-width) {
+    margin-top: 143px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     text-align: center;
     padding: 0 33px;
-    gap: 20px;
+    gap: 67px;
+    margin-bottom: 17px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 142px;
+    margin-bottom: 37px;
   }
 }
 
-@media (min-width: @tablet-width) {
-  .reasons-item-one__sublist-title {
+.reasons-item-one__title {
+  .none-indent;
+  padding-top: 35px;
+
+  @media (min-width: @tablet-width) {
+    .none-indent;
+    margin-left: 24px;
+    margin-right: 24px;
+    margin-top: 15px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 117px;
+    margin-right: 115px;
+    margin-top: 20px;
+  }
+}
+
+.reasons-item-one__sublist-title {
+  .font-var(18px, 26px, 700);
+  .none-indent;
+
+  @media (min-width: @tablet-width) {
     .font-var(21px, 56px, 700);
+    // padding-top: 3px;
+  }
+}
+
+.reasons-item-one__sublist-text {
+  @media (min-width: @tablet-width) {
+    margin-top: 8px;
   }
 }
 
 .reasons-item-one__text {
   background-color: @blue-basic;
   color: @white-basic;
-  margin-top: 30px;
-  padding-top: 38px;
-  padding-bottom: 40px;
+  padding-top: 34px;
+  padding-bottom: 11px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 26px;
+  }
 }
 
-@media (min-width: @tablet-width) {
-  .reasons-item-one__wrap {
+.reasons-item-one__number {
+  margin-top: 10px;
+  margin-bottom: 18px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 22px;
+  }
+}
+
+.reasons-item-one__wrap {
+  position: relative;
+
+  &::before {
+    content: url("../img/triange-reasons1.svg");
+    left: 0;
+    position: absolute;
+
+    @media (min-width: @tablet-width) {
+      display: none;
+    }
+  }
+
+  @media (min-width: @tablet-width) {
+    margin-top: 30px;
     display: grid;
     grid-template-columns: 1fr 2fr;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 16px;
+  }
+}
+
+.reasons-item-one__housing {
+  margin-bottom: 29px;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    height: 37px;
+    width: 37px;
+    background-image: url("../img/icon-house.svg");
+    background-repeat: no-repeat;
+    left: -48px;
+    top: -8px;
+  }
+}
+
+.reasons-item-one__housing-text {
+  @media (min-width: @desktop-width) {
+    padding: 0 30px;
+  }
+}
+
+.reasons-item-one__souvenirs {
+  margin-bottom: 29px;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    height: 38px;
+    width: 32px;
+    background-image: url("../img/icon-gift.svg");
+    background-repeat: no-repeat;
+    left: -45px;
+    top: -11px;
+  }
+}
+
+.reasons-item-one__souvenirs-text {
+  @media (min-width: @tablet-width) {
+
+    margin-left: -3px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-right: 60px;
+    padding-left: 37px;
+    margin-left: 21px;
+  }
+}
+
+.reasons-item-one__souvenirs-text br {
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    display: initial;
+  }
+}
+
+.reasons-item-one__food {
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    height: 35px;
+    width: 40px;
+    background-image: url("../img/icon-burger.svg");
+    background-repeat: no-repeat;
+    left: -52px;
+    top: -6px;
+  }
+
+  @media (min-width: @tablet-width) {
+    grid-column: 2;
+    grid-row: 1;
+  }
+}
+
+.reasons-item-one__food-text {
+  padding-right: 10px;
+
+  @media (min-width: @tablet-width) {
+    padding-right: 19px;
+    padding-left: 20px;
+  }
+}
+
+.reasons-item-one__picture {
+  background-image: url("../img/photo-city-m.jpg");
+  height: 260px;
+  width: 320px;
+
+  @media (min-width: @tablet-width) {
+    background-image: url("../img/photo-city-t.jpg");
+    height: 256px;
+    width: 512px;
+  }
+
+  @media (min-width: @desktop-width) {
+    background-image: url("../img/photo-city-d.jpg");
+    width: 800px;
+  }
+}
+
+.reasons-item-one__description {
+  .none-indent;
+  padding-bottom: 30px;
+
+  @media (min-width: @tablet-width) {
+    padding: 0 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0 57px;
   }
 }
