@@ -1,0 +1,27 @@
+.sights-list {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  .none-indent;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 480px;
+    min-height: 184px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 980px;
+  }
+}
+
+.sights-list__checkbox {
+  display: none;
+}
+
+.sights-list__item {
+  display: flex;
+  align-items: center;
+  width: 240px;
+}
