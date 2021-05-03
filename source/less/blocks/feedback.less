@@ -44,3 +44,36 @@
   display: flex;
   flex-wrap: wrap;
 }
+
+
+.feedback__button {
+  text-transform: uppercase;
+  border: none;
+  .font-var(21px, 26px, 700);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 280px;
+  height: 58px;
+  background-color: @blue-basic;
+  color: @white-basic;
+  margin-bottom: 50px;
+
+  @media (min-width: @tablet-width) {
+    min-width: 324px;
+  }
+
+  @media (min-width: @desktop-width) {
+    min-width: 480px;
+  }
+}
+
+.feedback__req-fields {
+  margin-left: auto;
+  padding-top: 20px;
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: initial;
+  }
+}
