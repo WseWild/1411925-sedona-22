@@ -1,0 +1,28 @@
+.review {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 58px;
+  }
+}
+
+.review__input-text {
+  background-color: @grey-extra-light;
+  padding: 14px 20px;
+  width: 240px;
+  min-height: 132px;
+  resize: none;
+
+  @media (min-width: @tablet-width) {
+    width: 648px;
+    padding: 18px 20px;
+    resize: vertical;
+    min-height: 160px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 960px;
+  }
+}

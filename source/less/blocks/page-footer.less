@@ -1,6 +1,17 @@
+
 .page-footer__hashtag {
   .font-var(21px, 26px, 700);
-  margin-bottom: 34px;
+  margin-top: 37px;
+
+
+  @media (min-width: @tablet-width) {
+    margin-top: 22px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 48px;
+    margin-left: -19px;
+  }
 }
 
 .page-footer {
@@ -11,5 +22,15 @@
     display: flex;
     justify-content: space-around;
     flex-direction: row;
+    min-height: 120px;
+    align-items: center;
+  }
+}
+
+.page-footer__copyright {
+  padding-top: 42px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 0;
   }
 }
