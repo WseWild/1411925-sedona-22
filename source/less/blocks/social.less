@@ -10,18 +10,51 @@
 }
 
 .social__item {
+  cursor: pointer;
   width: 46px;
   height: 48px;
   background-color: @blue-basic;
 }
 
-.social {
-  margin: 0 auto;
+.social__item:hover {
+  background-color: @blue-special;
 }
 
-@media (min-width: @tablet-width) {
-  .social {
-    margin: 0;
-    margin-top: 20px;
-  }
+.social__item:active {
+  background-color: @blue-extra;
+}
+
+.social__item:active .social__icon--youtube {
+  opacity: 0.3;
+}
+
+.social__item:active .social__icon--facebook {
+  opacity: 0.3;
+}
+
+.social__item:active .social__icon--twitter {
+  opacity: 0.3;
+}
+
+.social {
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.social__icon--youtube {
+  width: 20px;
+  height: 14px;
+  padding-top: 17px;
+}
+
+.social__icon--twitter {
+  width: 18px;
+  height: 15px;
+  padding-top: 17px;
+}
+
+.social__icon--facebook {
+  width: 9px;
+  height: 19px;
+  padding-top: 13px;
 }

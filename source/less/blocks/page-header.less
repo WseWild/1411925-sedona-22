@@ -1,6 +1,10 @@
 .page-header__wrap {
   height: 56px;
   position: relative;
+
+  @media (max-width: @mobile-width-only) {
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.25);
+  }
 }
 
 @media (min-width: @tablet-width) {

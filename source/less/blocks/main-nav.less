@@ -1,19 +1,19 @@
 .main-nav {
   background-color: @navy-basic;
-}
 
-@media (min-width: @tablet-width) {
-  .main-nav {
+  @media (min-width: @tablet-width) {
     background-color: @white-basic;
   }
 }
 
-.main-nav__list {
-  .none-indent;
+.main-nav--nojs {
+  display: none;
 }
 
-@media (min-width: @tablet-width) {
-  .main-nav__list {
+.main-nav__list {
+  .none-indent;
+
+  @media (min-width: @tablet-width) {
     display: flex;
     flex-direction: row;
   }
@@ -27,13 +27,24 @@
   display: flex;
   align-items: center;
   box-shadow: 0 1px 0 rgba(1, 1, 1, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.2);
-}
 
-@media (min-width: @tablet-width) {
-  .main-nav__list-item {
+  @media (min-width: @tablet-width) {
     background-color: @white-basic;
     margin-bottom: 0;
     box-shadow: none;
+  }
+}
+
+.main-nav__list-item:hover {
+  @media (max-width: @mobile-width-only) {
+    background-color: @blue-special;
+  }
+}
+
+.main-nav__list-item:active {
+  @media (max-width: @mobile-width-only) {
+    background-color: @blue-extra;
+    opacity: 0.3;
   }
 }
 
@@ -48,35 +59,62 @@
 }
 
 .main-nav__list-link {
+  cursor: pointer;
   text-decoration: none;
   color: @white-basic;
   width: 100%;
   .font-var(18px, 40px, 700);
-}
 
-@media (min-width: @tablet-width) {
-  .main-nav__list-link {
+  @media (min-width: @tablet-width) {
     color: @black-basic;
     .font-var(14px, 26px, 700);
   }
 }
 
-.main-nav__sandwich-button {
-  position: absolute;
+.main-nav__list-link:hover {
+  @media (min-width: @tablet-width) {
+    color: @blue-basic;
+  }
 }
 
-@media (min-width: @tablet-width) {
-  .main-nav__sandwich-button {
+.main-nav__list-link:active {
+  @media (min-width: @tablet-width) {
+    color: @black-basic;
+    opacity: 0.3;
+  }
+}
+
+.main-nav__list-link--active {
+  @media (min-width: @tablet-width) {
+    color: @brown-basic;
+  }
+}
+
+.main-nav__list-link--active:hover {
+  @media (min-width: @tablet-width) {
+    color: @brown-special;
+  }
+}
+
+.main-nav__list-link--active:active {
+  @media (min-width: @tablet-width) {
+    color: @brown-basic;
+    opacity: 0.3;
+  }
+}
+
+.main-nav__sandwich-button {
+  position: absolute;
+
+  @media (min-width: @tablet-width) {
     display: none;
   }
 }
 
 .main-nav__close-button {
   position: absolute;
-}
 
-@media (min-width: @tablet-width) {
-  .main-nav__close-button {
+  @media (min-width: @tablet-width) {
     display: none;
   }
 }
