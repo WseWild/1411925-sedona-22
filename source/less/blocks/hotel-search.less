@@ -34,6 +34,7 @@
 }
 
 .hotel-search__button {
+  cursor: pointer;
   text-decoration: none;
   .font-var( 21px, 26px, 700);
   display: flex;
@@ -53,6 +54,16 @@
     margin-bottom: 65px;
   }
 }
+
+.hotel-search__button:hover {
+  background-color: @blue-special;
+}
+
+.hotel-search__button:active {
+  background-color: @blue-extra;
+  color: @white-opacity-03;
+}
+
 
 .hotel-search__wrap {
   max-width: 458px;
