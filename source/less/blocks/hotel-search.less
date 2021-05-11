@@ -48,22 +48,21 @@
   margin-left: 20px;
   margin-right: 20px;
 
+  &:hover {
+    background-color: @blue-special;
+  }
+
+  &:active {
+    background-color: @blue-extra;
+    color: @white-opacity-03;
+  }
+
   @media (min-width: @tablet-width) {
     margin-left: 0;
     margin-right: 0;
     margin-bottom: 65px;
   }
 }
-
-.hotel-search__button:hover {
-  background-color: @blue-special;
-}
-
-.hotel-search__button:active {
-  background-color: @blue-extra;
-  color: @white-opacity-03;
-}
-
 
 .hotel-search__wrap {
   max-width: 458px;

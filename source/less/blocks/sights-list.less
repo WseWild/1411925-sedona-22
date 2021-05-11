@@ -21,7 +21,26 @@
 }
 
 .sights-list__item {
+  cursor: pointer;
   display: flex;
   align-items: center;
   width: 240px;
+  position: relative;
+}
+
+.sights-list__item::before {
+  position: absolute;
+  content: "";
+  width: 46px;
+  height: 46px;
+  background-color: @grey-extra-light;
+  left: -70px;
+}
+
+.sights-list__checkbox:checked + .sights-list__item::after {
+  position: absolute;
+  content: url("../img/tick.svg");
+  width: 24px;
+  height: 17px;
+  left: -60px;
 }

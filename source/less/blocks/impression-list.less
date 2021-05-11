@@ -5,8 +5,31 @@
 .impression-list__item {
   margin-bottom: 43px;
   margin-left: 75px;
+  position: relative;
 
   @media (min-width: @tablet-width) {
     margin-bottom: 52px;
   }
+}
+
+.impression-list__label::before {
+  position: absolute;
+  content: "";
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  background-color: @grey-extra-light;
+  top: -12px;
+  left: -74px;
+}
+
+.impression-list__radio:checked + .impression-list__label::after {
+  position: absolute;
+  content: "";
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: @black-basic;
+  left: -55px;
+  top: 5px;
 }

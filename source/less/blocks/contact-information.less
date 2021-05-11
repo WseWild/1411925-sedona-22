@@ -25,6 +25,16 @@
   background-color: @grey-extra-light;
   padding-left: 20px;
 
+  &:hover {
+    background-color: @grey-light;
+  }
+
+  &:focus {
+    outline: 4px solid @grey-light;
+    outline-offset: -4px;
+    background-color: @white-basic;
+  }
+
 
   @media (min-width: @tablet-width) {
     width: 628px;
