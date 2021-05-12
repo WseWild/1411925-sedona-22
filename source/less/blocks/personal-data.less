@@ -28,6 +28,16 @@
 .personal-data__input-text {
   background-color: @grey-extra-light;
   width: 100%;
+
+  &:hover {
+    background-color: @grey-light;
+  }
+
+  &:focus {
+    outline: 4px solid @grey-light;
+    outline-offset: -4px;
+    background-color: @white-basic;
+  }
 }
 
 .personal-data__label {

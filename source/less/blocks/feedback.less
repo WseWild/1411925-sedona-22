@@ -47,6 +47,7 @@
 
 
 .feedback__button {
+  cursor: pointer;
   text-transform: uppercase;
   border: none;
   .font-var(21px, 26px, 700);
@@ -58,6 +59,15 @@
   background-color: @blue-basic;
   color: @white-basic;
   margin-bottom: 50px;
+
+  &:hover {
+    background-color: @blue-special;
+  }
+
+  &:active {
+    background-color: @blue-extra;
+    color: @white-opacity-03;
+  }
 
   @media (min-width: @tablet-width) {
     min-width: 324px;

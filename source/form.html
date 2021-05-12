@@ -12,14 +12,14 @@
       background-repeat: no-repeat;
       background-position: 50% 0;
       /* По умолчанию мобильный макет */
-      background-image: url("img/form-mobile.png");
+      background-image: url("img/form-mobile.jpg");
     }
     /* Планшет */
 
     @media ( min-width: 768px) {
       HTML {
         /* Планшетный макет */
-        background-image: url("img/form-tablet.png");
+        background-image: url("img/form-tablet.jpg");
       }
     }
     /* Десктоп */
@@ -27,12 +27,12 @@
     @media ( min-width: 1200px) {
       HTML {
         /* Десктопный макет */
-        background-image: url("img/form-desktop.png");
+        background-image: url("img/form-desktop.jpg");
       }
     }
 
     BODY {
-      opacity: 0.5;
+      opacity: 0.7;
       filter: invert(80%);
     }
   }
@@ -121,15 +121,15 @@
           <ul class="general-impression__list impression-list">
             <li class=" impression-list__item">
               <input class="visually-hidden impression-list__radio"  type="radio" id="impression-positive"  value="imp+" name="impression" checked>
-              <label class=" feedback-form__input-text" for="impression-positive">Скорее положительное</label>
+              <label class=" feedback-form__input-text impression-list__label" for="impression-positive">Скорее положительное</label>
             </li>
             <li class="impression-list__item">
               <input class="visually-hidden impression-list__radio"  type="radio" id="impression-negative"  value="imp-" name="impression">
-              <label class="feedback-form__input-text" for="impression-negative">Скорее отрицательное</label>
+              <label class="feedback-form__input-text impression-list__label" for="impression-negative">Скорее отрицательное</label>
             </li>
             <li class="impression-list__item">
               <input class="visually-hidden impression-list__radio"  type="radio" id="impression-difficult"  value="imp?" name="impression">
-              <label class="feedback-form__input-text" for="impression-difficult">Затрудняюсь ответить</label>
+              <label class="feedback-form__input-text impression-list__label" for="impression-difficult">Затрудняюсь ответить</label>
             </li>
           </ul>
         </fieldset>
