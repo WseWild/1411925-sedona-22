@@ -1,16 +1,37 @@
+.foto-gallery {
+  margin-bottom: 50px;
+}
+
 .foto-gallery__description {
   .font-var( 14px, 24px);
-  margin-bottom: 42px;
+  margin: 0 15px;
+  margin-bottom: 55px;
+
 
   @media (min-width: @tablet-width) {
-    margin-right: 165px;
-    margin-left: 165px;
-    margin-bottom: 70px;
+    margin: 0 165px;
+    margin-bottom: 77px;
   }
 
   @media (min-width: @desktop-width) {
     margin-left: 385px;
     margin-right: 385px;
     margin-bottom: 80px;
+  }
+}
+
+.gallery-list__item {
+  @media (max-width: @mobile-width-only) {
+    position: relative;
+    margin-bottom: 40px;
+  }
+}
+
+.gallery-list__item::before {
+  @media (max-width: @mobile-width-only) {
+    position: absolute;
+    top: -40px;
+    left: -20px;
+    content: url("../img/catalog-mobile-line.svg");
   }
 }

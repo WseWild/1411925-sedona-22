@@ -1,6 +1,25 @@
+.video-gallery {
+  position: relative;
+
+  &::before {
+    @media (max-width: @mobile-width-only) {
+      position: absolute;
+      top: -40px;
+      left: 0;
+      content: url("../img/catalog-mobile-line.svg");
+    }
+  }
+}
+
 .video-gallery__title {
   .font-var( 18px, 26px, 700);
+  margin: 0;
   margin-bottom: 30px;
+
+  @media (min-width: @tablet-width) {
+    .font-var( 30px, 26px, 700);
+    margin-bottom: 35px;
+  }
 }
 
 .video-gallery__description {
@@ -8,4 +27,9 @@
   .font-var( 14px, 24px);
   margin: 0 30px;
   margin-bottom: 35px;
+
+  @media (min-width: @tablet-width) {
+    margin: 0 160px;
+    margin-bottom: 75px;
+  }
 }

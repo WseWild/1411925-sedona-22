@@ -6,6 +6,7 @@
     margin: 0 60px;
     display: flex;
     flex-wrap: wrap;
+    margin-bottom: 60px;
   }
 
   @media (min-width: @desktop-width) {
@@ -17,6 +18,11 @@
   .none-indent;
   .font-var( 14px, 24px, 700);
   text-align: left;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 8px;
+    margin-left: 18px;
+  }
 
   @media (min-width: @desktop-width) {
     color: @white-basic;
@@ -30,6 +36,10 @@
   .font-var( 14px, 24px, 400);
   margin-bottom: 15px;
 
+  @media (min-width: @tablet-width) {
+    margin-left: 18px;
+  }
+
   @media (min-width: @desktop-width) {
     color: @white-basic;
   }
@@ -40,6 +50,26 @@
   text-align: left;
   .font-var( 14px, 24px, 700);
   margin-bottom: 15px;
+  position: relative;
+  margin-left: 37px;
+
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+    margin-top: 23px;
+    min-width: 50px;
+  }
+
+  &::before {
+    content: url("../img/like-icon.svg");
+    position: absolute;
+    left: -35px;
+    top: -2px;
+
+    @media (min-width: @desktop-width) {
+      content: url("../img/like-icon-d.svg");
+    }
+  }
 
   @media (min-width: @desktop-width) {
     color: @white-basic;
@@ -49,6 +79,7 @@
 .gallery-list__item-1 {
   @media (min-width: @tablet-width) {
     width: 648px;
+    height: 480px;
   }
 
   @media (min-width: @desktop-width) {
