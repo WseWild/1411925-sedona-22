@@ -1,6 +1,6 @@
 .video-preview {
   position: relative;
-  margin-bottom: 120px;
+  margin-bottom: 100px;
   width: 320px;
 
   @media (min-width: @tablet-width) {
@@ -18,7 +18,7 @@
 .video-preview__mobile-playback {
   height: 66px;
   background-color: @grey-extra-light;
-  margin-top: 45px;
+  margin-top: 47px;
 
   @media (min-width: @tablet-width) {
     display: none;
@@ -30,7 +30,7 @@
   min-height: 111px;
   background-color: @black-opacity-06;
   width: 280px;
-  bottom: -74px;
+  bottom: -66px;
   left: 20px;
 
 
@@ -44,4 +44,60 @@
 
 .video-preview__picture {
   display: block;
+}
+
+
+.video-preview__volume-skale {
+  position: absolute;
+  background: @white-basic;
+  height: 3px;
+  margin: 0 22px;
+  border: 0;
+  top: 23px;
+  width: 235px;
+  opacity: 0.4;
+}
+
+.video-preview__subtitles {
+
+  position: absolute;
+  top: 67px;
+  right: 74px;
+}
+
+.video-preview__replay {
+  position: absolute;
+  top: 67px;
+  left: 30px;
+}
+
+.video-preview__fullscreen {
+  position: absolute;
+  top: 70px;
+  right: 23px;
+}
+
+.video-preview__icon path {
+  @media (min-width: @desktop-width) {
+    fill: @white-basic;
+  }
+}
+
+.video-preview__icon:hover path {
+  fill: @grey-extra-dark;
+
+  @media (min-width: @desktop-width) {
+    fill: @white-basic;
+    opacity: 0.6;
+  }
+}
+
+.video-preview__icon:active path {
+  fill: @grey-extra-dark;
+  opacity: 0.3;
+
+  @media (min-width: @desktop-width) {
+    fill: @white-basic;
+    opacity: 0.3;
+  }
 }
