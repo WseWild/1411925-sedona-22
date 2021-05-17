@@ -5,16 +5,24 @@
   @media (max-width: @mobile-width-only) {
     box-shadow: 0 0 6px rgba(0, 0, 0, 0.25);
   }
-}
 
-@media (min-width: @tablet-width) {
-  .page-header__wrap {
+  @media (min-width: @tablet-width) {
     height: 0;
   }
+}
 
-  .page-header__logo {
+.page-header__logo {
+  @media (min-width: @tablet-width) {
     content: "";
     position: relative;
     top: -56px;
+  }
+}
+
+
+.page-header__logo-image {
+  @media (min-width: @desktop-width) {
+    width: 187px;
+    height: 97px;
   }
 }

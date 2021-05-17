@@ -16,7 +16,6 @@
   }
 }
 
-// Так можно делать в качестве исключения если текст плохо поддается форматированию через боковые отступы?
 .reasons-item-two__title br {
   display: none;
 
@@ -68,14 +67,29 @@
   width: 320px;
   grid-row: 1;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/photo-bridge-m@2x.jpg");
+    background-size: 320px auto;
+  }
+
   @media (min-width: @tablet-width) {
     background-image: url("../img/photo-bridge-t.jpg");
     height: 256px;
     width: 512px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/photo-bridge-t@2x.jpg");
+      background-size: 512px auto;
+    }
   }
 
   @media (min-width: @desktop-width) {
     background-image: url("../img/photo-bridge-d.jpg");
     width: 800px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/photo-bridge-d@2x.jpg");
+      background-size: 800px auto;
+    }
   }
 }
