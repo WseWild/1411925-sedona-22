@@ -41,6 +41,10 @@
   <script src="../node_modules/pixel-glass/script.js"></script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicon-180.png">
+  <link rel="manifest" href="manifest.webmanifest">
   <title>HTML Academy: Седона</title>
 </head>
 
@@ -79,7 +83,10 @@
     </nav>
     <div class="page-header__wrap">
       <a class="page-header__logo">
-        <img class="page-header__logo-image" src="img/logotype-mobile.svg" width="102" height="84" alt="Логотип сайта Седона">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/logotype-desktop.svg">
+          <img class="page-header__logo-image"  src="img/logotype-mobile.svg" width="102" height="84" alt="Логотип сайта Седона">
+        </picture>
       </a>
     </div>
   </header>
@@ -194,7 +201,7 @@
         </a>
       </div>
       <div class="hotel-search__map-wrap">
-        <iframe class="hotel-search__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1704463.687703044!2d-112.7940862226719!3d34.270599289137415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da14b79c7a2b5%3A0xf42cf16ec607e7da!2z0K3QudGA0L_QvtGA0YIg0JzQtdGB0LA!5e0!3m2!1sru!2sru!4v1619299285869!5m2!1sru!2sru" width="320" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <iframe class="hotel-search__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1704463.687703044!2d-112.7940862226719!3d34.270599289137415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da14b79c7a2b5%3A0xf42cf16ec607e7da!2z0K3QudGA0L_QvtGA0YIg0JzQtdGB0LA!5e0!3m2!1sru!2sru!4v1619299285869!5m2!1sru!2sru" width="320" height="350" style="border: 0;" allowfullscreen="" loading="lazy"></iframe>
       </div>
     </section>
   </main>
