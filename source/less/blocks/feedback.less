@@ -2,6 +2,7 @@
   margin: 0 20px;
   display: flex;
   flex-wrap: wrap;
+  margin-bottom: 28px;
 
   @media (min-width: @tablet-width) {
     margin: 0 60px;
@@ -16,33 +17,61 @@
   .none-indent;
   .font-var(18px, 26px, 700);
   margin: 0 auto;
-  margin-top: 36px;
-  margin-bottom: 20px;
+  margin-bottom: 24px;
+  position: relative;
 
   @media (min-width: @tablet-width) {
     .font-var(30px, 26px, 700);
+    margin-bottom: 32px;
+  }
+
+  &::before {
+    position: absolute;
+    content: "";
+    background-image: url("../img/intro-triangle.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 320px;
+    height: 60px;
+    top: -95px;
+    left: -64px;
+
+    @media (min-width: @tablet-width) {
+      top: -118px;
+      left: -224px;
+      width: 768px;
+    }
+
+    @media (min-width: @desktop-width) {
+      left: -482px;
+      top: -170px;
+      width: 1280px;
+    }
   }
 }
 
 .feedback__description {
-  margin-bottom: 37px;
+  .none-indent;
+  margin-bottom: 32px;
 
   @media (min-width: @tablet-width) {
-    margin-bottom: 95px;
-    margin-left: 106px;
-    margin-right: 106px;
+    margin: 0 106px;
+    margin-bottom: 81px;
   }
 
   @media (min-width: @desktop-width) {
-    margin-bottom: 75px;
-    margin-left: 262px;
-    margin-right: 262px;
+    margin: 0 262px;
+    margin-bottom: 55px;
   }
 }
 
 .feedback__form {
   display: flex;
   flex-wrap: wrap;
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 7px;
+  }
 }
 
 

@@ -7,12 +7,16 @@
   @media (min-width: @tablet-width) {
     flex-direction: row;
     justify-content: space-between;
-    width: 480px;
+    width: 507px;
+    margin-left: 100px;
     min-height: 184px;
   }
 
   @media (min-width: @desktop-width) {
-    width: 980px;
+    margin-left: 0;
+    justify-content: space-between;
+    width: 100%;
+    min-height: 0;
   }
 }
 
@@ -26,15 +30,27 @@
   align-items: center;
   width: 240px;
   position: relative;
+  justify-content: center;
+  margin-left: 12px;
+  margin-bottom: 23px;
+
+  @media (min-width: @desktop-width) {
+    margin-left: 29px;
+    width: 194px;
+  }
 }
 
 .sights-list__item::before {
   position: absolute;
   content: "";
-  width: 46px;
-  height: 46px;
+  width: 53px;
+  height: 53px;
   background-color: @grey-extra-light;
-  left: -70px;
+  left: -12px;
+
+  @media (min-width: @desktop-width) {
+    left: -34px;
+  }
 }
 
 .sights-list__checkbox:checked + .sights-list__item::after {
@@ -42,5 +58,9 @@
   content: url("../img/tick.svg");
   width: 24px;
   height: 17px;
-  left: -60px;
+  left: 0;
+
+  @media (min-width: @desktop-width) {
+    left: -22px;
+  }
 }

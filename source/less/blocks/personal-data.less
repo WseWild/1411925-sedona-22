@@ -1,8 +1,22 @@
 .personal-data {
+  .none-indent;
   margin-bottom: 26px;
 
+  &::before {
+    position: absolute;
+    top: -79px;
+    left: -20px;
+    content: url("../img/catalog-mobile-line.svg");
+
+    @media (min-width: @tablet-width) {
+      top: -70px;
+      left: 0;
+      content: url("../img/catalog-line-vert.svg");
+    }
+  }
+
   @media (min-width: @tablet-width) {
-    margin-bottom: 52px;
+    margin-bottom: 47px;
     flex-direction: column;
     width: 324px;
   }
@@ -13,10 +27,11 @@
 }
 
 .personal-data__title {
-  margin-bottom: 15px;
+  margin: 0 auto;
+  margin-bottom: 17px;
 
   @media (min-width: @tablet-width) {
-    margin-bottom: 52px;
+    margin-bottom: 57px;
     margin-left: 58px;
   }
 
@@ -28,6 +43,7 @@
 .personal-data__input-text {
   background-color: @grey-extra-light;
   width: 100%;
+  padding-left: 22px;
 
   &:hover {
     background-color: @grey-light;

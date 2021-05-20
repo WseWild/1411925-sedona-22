@@ -1,3 +1,68 @@
 .sights-visited {
+  .none-indent;
   margin: 0 auto;
+  margin-bottom: 20px;
+
+  &::before {
+    position: absolute;
+    top: -103px;
+    left: -20px;
+    content: url("../img/catalog-mobile-line.svg");
+
+    @media (min-width: @tablet-width) {
+      top: -80px;
+      left: 0;
+      content: url("../img/catalog-tablet-line.svg");
+    }
+
+    @media (min-width: @desktop-width) {
+      position: absolute;
+      top: -85px;
+      left: -19px;
+      content: url("../img/catalog-desktop-line.svg");
+    }
+  }
+
+  &::after {
+    @media (min-width: @tablet-width) {
+      position: absolute;
+      top: -80px;
+      right: 0;
+      content: url("../img/catalog-tablet-line.svg");
+    }
+
+    @media (min-width: @desktop-width) {
+      position: absolute;
+      top: -85px;
+      right: 21px;
+      content: url("../img/catalog-desktop-line.svg");
+    }
+  }
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 33px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 46px;
+  }
+}
+
+.sights-visited__title {
+  margin-bottom: 18px;
+
+  @media (min-width: @tablet-width) {
+    margin-left: 160px;
+    margin-right: 163px;
+    margin-bottom: 41px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 342px;
+    margin-right: 345px;
+  }
+}
+
+.sights-visited__item {
+  margin-left: 30px;
 }
