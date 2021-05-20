@@ -14,11 +14,15 @@
 .page-header__logo {
   @media (min-width: @tablet-width) {
     content: "";
-    position: relative;
+    position: absolute;
     top: -56px;
+    left: 335px;
+  }
+
+  @media (min-width: @desktop-width) {
+    left: 507px;
   }
 }
-
 
 .page-header__logo-image {
   @media (min-width: @desktop-width) {

@@ -35,9 +35,9 @@
       opacity: 0.7;
       filter: invert(80%);
     }
-  }
-  </style> -->
 
+  </style>
+ -->
   <link rel="stylesheet" href="../node_modules/pixel-glass/styles.css">
   <link rel="stylesheet" href="css/style.css">
   <script src="../node_modules/pixel-glass/script.js"></script>
@@ -85,6 +85,7 @@
     <div class="page-header__wrap">
       <a class="page-header__logo" href="index.html">
         <picture>
+          <source media="(min-width: 1200px)" srcset="img/logotype-desktop.svg">
           <img class="page-header__logo-image"  src="img/logotype-mobile.svg" width="102" height="84" alt="Логотип сайта Седона">
         </picture>
       </a>
@@ -116,9 +117,9 @@
           </div>
         </fieldset>
         <fieldset class="contact-information feedback-form">
-          <legend class="contact-information__title feedback-form__title">Контактная информация</legend>
+          <legend class="contact-information__title feedback-form__title">Контактная информация:</legend>
           <label class="contact-information__label feedback-form__input-name" for="phone"><span class="contact-information__contact-word">Контактный </span> телефон*:</label>
-          <input class="contact-information__input-text feedback-form__input-text " id="phone" name="phone-number" type="tel" placeholder="Введите телефон">
+          <input class="contact-information__input-text feedback-form__input-text feedback-form__phone-input " id="phone" name="phone-number" type="tel" placeholder="Введите телефон">
           <label class="contact-information__label feedback-form__input-name" for="email">Электронная почта*:</label>
           <input class="contact-information__input-text feedback-form__input-text " type="email" id="email" name="user-mail" placeholder="Введите e-mail">
         </fieldset>
@@ -170,7 +171,7 @@
     </section>
   </main>
 
-  <footer class="page-footer container">
+  <footer class="page-footer">
     <div class="page-footer__hashtag">
       <b>
           #visitsedona

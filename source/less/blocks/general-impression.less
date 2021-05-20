@@ -1,4 +1,18 @@
 .general-impression {
+  .none-indent;
+  margin-bottom: 12px;
+
+  &::before {
+    position: absolute;
+    top: -97px;
+    left: -20px;
+    content: url("../img/catalog-mobile-line.svg");
+
+    @media (min-width: @tablet-width) {
+      display: none;
+    }
+  }
+
   @media (min-width: @tablet-width) {
     order: -1;
     width: 324px;
@@ -16,6 +30,7 @@
 
   @media (min-width: @tablet-width) {
     margin-bottom: 72px;
+    margin-left: 0;
   }
 
   @media (min-width: @desktop-width) {

@@ -1,23 +1,35 @@
 .page-title {
-  min-height: 100%;
   width: 100%;
   background-image: url("../img/title-back.jpg");
+  min-height: 110px;
   background-position: bottom;
   background-repeat: no-repeat;
   padding-top: 47px;
-  padding-bottom: 55px;
-  margin-bottom: 28px;
+  margin-bottom: 37px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/title-back-tablet@2x.jpg");
+  }
 
   @media (min-width: @tablet-width) {
     background-image: url("../img/title-back-tablet.jpg");
     height: 290px;
     padding: 0;
     margin-bottom: 62px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/title-back-tablet@2x.jpg");
+    }
   }
 
   @media (min-width: @desktop-width) {
     background-image: url("../img/title-back-desktop.jpg");
-    margin-bottom: 114px;
+    margin-bottom: 113px;
+    min-height: 300px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/title-back-desktop@2x.jpg");
+    }
   }
 }
 
