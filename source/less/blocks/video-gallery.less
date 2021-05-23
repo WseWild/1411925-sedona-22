@@ -4,7 +4,7 @@
   &::before {
     @media (max-width: @mobile-width-only) {
       position: absolute;
-      top: -40px;
+      top: -50px;
       left: 0;
       content: url("../img/catalog-mobile-line.svg");
     }
@@ -26,10 +26,15 @@
   .none-indent;
   .font-var( 14px, 24px);
   margin: 0 30px;
-  margin-bottom: 35px;
+  margin-bottom: 30px;
 
   @media (min-width: @tablet-width) {
     margin: 0 160px;
     margin-bottom: 75px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 370px;
+    margin-right: 370px;
   }
 }

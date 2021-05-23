@@ -1,28 +1,54 @@
+.foto-video {
+  margin-bottom: 138px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 32px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 75px;
+  }
+}
+
+
 .foto-video__title {
   .font-var( 18px, 26px, 700);
   .none-indent;
   position: relative;
   margin-bottom: 29px;
+  margin-top: -6px;
 
   @media (min-width: @tablet-width) {
     .font-var( 30px, 26px, 700);
+    margin-top: 0;
     margin-bottom: 35px;
   }
 
+  @media (min-width: @desktop-width) {
+    margin-top: -12px;
+  }
+
   &::before {
-    content: url("../img/intro-triangle.svg");
     position: absolute;
-    top: -85px;
-    left: -439px;
+    content: "";
+    background-image: url("../img/intro-triangle.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 320px;
+    height: 60px;
+    top: -88px;
+    left: 0;
 
     @media (min-width: @tablet-width) {
+      width: 768px;
       top: -119px;
-      left: -216px;
+      left: 0;
     }
 
     @media (min-width: @desktop-width) {
-      left: 0;
+      width: 1280px;
       top: -160px;
+      left: -40px;
     }
   }
 }
