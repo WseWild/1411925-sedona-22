@@ -34,11 +34,11 @@
     width: 320px;
     height: 60px;
     top: -95px;
-    left: -64px;
+    left: -65px;
 
     @media (min-width: @tablet-width) {
       top: -118px;
-      left: -224px;
+      left: -225px;
       width: 768px;
     }
 
@@ -69,8 +69,12 @@
   display: flex;
   flex-wrap: wrap;
 
+  @media (min-width: @tablet-width) {
+    margin-bottom: 28px;
+  }
+
   @media (min-width: @desktop-width) {
-    margin-bottom: 7px;
+    margin-bottom: 34px;
   }
 }
 
@@ -79,6 +83,7 @@
   cursor: pointer;
   text-transform: uppercase;
   border: none;
+  font-family: "PT Sans", "Arial", sans-serif;
   .font-var(21px, 26px, 700);
   display: flex;
   align-items: center;

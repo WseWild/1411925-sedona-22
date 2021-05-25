@@ -1,3 +1,5 @@
+
+
 .sights-list {
   display: flex;
   flex-direction: column;
@@ -8,7 +10,7 @@
     flex-direction: row;
     justify-content: space-between;
     width: 507px;
-    margin-left: 100px;
+    margin-left: 65px;
     min-height: 184px;
   }
 
@@ -35,8 +37,8 @@
   margin-bottom: 23px;
 
   @media (min-width: @desktop-width) {
-    margin-left: 29px;
-    width: 194px;
+    margin-left: 64px;
+    width: 151px;
   }
 }
 
@@ -47,9 +49,29 @@
   height: 53px;
   background-color: @grey-extra-light;
   left: -12px;
+}
 
+.sights-list__bridge::before {
   @media (min-width: @desktop-width) {
-    left: -34px;
+    left: -64px;
+  }
+}
+
+.sights-list__bell::before {
+  @media (min-width: @desktop-width) {
+    left: -54px;
+  }
+}
+
+.sights-list__park::before {
+  @media (min-width: @desktop-width) {
+    left: -46px;
+  }
+}
+
+.sights-list__rock::before {
+  @media (min-width: @desktop-width) {
+    left: -52px;
   }
 }
 
@@ -62,5 +84,29 @@
 
   @media (min-width: @desktop-width) {
     left: -22px;
+  }
+}
+
+.sights-list__checkbox:checked + .sights-list__bridge::after {
+  @media (min-width: @desktop-width) {
+    left: -48px;
+  }
+}
+
+.sights-list__checkbox:checked + .sights-list__bell::after {
+  @media (min-width: @desktop-width) {
+    left: -38px;
+  }
+}
+
+.sights-list__checkbox:checked + .sights-list__park::after {
+  @media (min-width: @desktop-width) {
+    left: -29px;
+  }
+}
+
+.sights-list__checkbox:checked + .sights-list__rock::after {
+  @media (min-width: @desktop-width) {
+    left: -40px;
   }
 }
